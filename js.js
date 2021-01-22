@@ -13,8 +13,8 @@ const ADMinute = document.getElementById("minutes-ad-n");
 const ADSecond = document.getElementById("seconds-ad-n");
 
 function annoDominiCounter() {
-   let autoCalcNextYear= Date.now() + 31556952
-  let date = new Date(autoCalcNextYear);
+  // let autoCalcNextYear= Date.now() + 31556952
+  let date = new Date(newYearDate);
   let todayDate = Date.now();
   let yearPeriodLeftInMiliSeconds = new Date(date - todayDate);
   let totalSeconds = Math.floor(yearPeriodLeftInMiliSeconds / 1000);
